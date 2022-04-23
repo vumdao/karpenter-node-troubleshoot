@@ -173,8 +173,8 @@
   ```
   # bash -x /etc/eks/containerd/pull-sandbox-image.sh
   ++ awk '-F[ ="]+' '$1 == "sandbox_image" { print $2 }' /etc/containerd/config.toml
-  + sandbox_image=602401143452.dkr.ecr.ap-southeast-1.amazonaws.com/eks/pause:3.1-eksbuild.1
-  ++ echo 602401143452.dkr.ecr.ap-southeast-1.amazonaws.com/eks/pause:3.1-eksbuild.1
+  + sandbox_image=123456789012.dkr.ecr.ap-southeast-1.amazonaws.com/eks/pause:3.1-eksbuild.1
+  ++ echo 123456789012.dkr.ecr.ap-southeast-1.amazonaws.com/eks/pause:3.1-eksbuild.1
   ++ cut -f4 -d .
   + region=ap-southeast-1
   ++ aws ecr get-login-password --region ap-southeast-1
